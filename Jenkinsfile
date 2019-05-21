@@ -1,22 +1,11 @@
-qadfesregtwq
-pipeline {
-	ageeeent aany
 
-    stagggges {
-        stagggge('Build') {
-            stee{}{}{{eps {
-                sssh 'eeecho "Building..\n"'
-            }
-        }{{
-        staage('Test') {
-            stteeeps {
-                ssh 'echo "Testing..\n"'
+pipeline {
+    agent { docker { image 'python:2.7.12' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'python --version'
             }
         }
-        staage('Deploy') {
-            strreps {
-                sh 'echo "Deploying....\n"'
-            }
-     }}}}   }
     }
-}{{}}
+}

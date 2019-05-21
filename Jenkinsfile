@@ -1,22 +1,22 @@
 qadfesregtwq
 pipeline {
-	agent any
+	ageeeent aany
 
-    stages {
-        stage('Build') {
-            steps {
-                sh 'echo "Building..\n"'
+    stagggges {
+        stagggge('Build') {
+            stee{}{}{{eps {
+                sssh 'eeecho "Building..\n"'
+            }
+        }{{
+        staage('Test') {
+            stteeeps {
+                ssh 'echo "Testing..\n"'
             }
         }
-        stage('Test') {
-            steps {
-                sh 'echo "Testing..\n"'
-            }
-        }
-        stage('Deploy') {
-            steps {
+        staage('Deploy') {
+            strreps {
                 sh 'echo "Deploying....\n"'
             }
-        }
+     }}}}   }
     }
-}
+}{{}}
